@@ -1,0 +1,121 @@
+<h1>Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+
+  <tr>
+    <td>リーダブルコード</td>
+    <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+    <td>
+      <a class="show_63269" href="/books/63269">Show</a>
+    </td>
+    <td>
+      <a class="show_63269" href="/books/63269/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63269" href="/books/63269">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>トラブル知らずのシステム設計</td>
+    <td>システム設計の要点を図解で説明してくれます</td>
+    <td>
+      <a class="show_63250" href="/books/63250">Show</a>
+    </td>
+    <td>
+      <a class="show_63250" href="/books/63250/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63250" href="/books/63250">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>たのしいRuby</td>
+    <td>Rudyの入門におすすめです</td>
+    <td>
+      <a class="show_63251" href="/books/63251">Show</a>
+    </td>
+    <td>
+      <a class="show_63251" href="/books/63251/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63251" href="/books/63251">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>入門Git</td>
+    <td>gitについての基本操作から内部構造まで解説してくれます</td>
+    <td>
+      <a class="show_63252" href="/books/63252">Show</a>
+    </td>
+    <td>
+      <a class="show_63252" href="/books/63252/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63252" href="/books/63252">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>アルゴリズム図鑑</td>
+    <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+    <td>
+      <a class="show_63253" href="/books/63253">Show</a>
+    </td>
+    <td>
+      <a class="show_63253" href="/books/63253/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63253" href="/books/63253">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>達人プログラマー</td>
+    <td>プログラマ入門者は必読！</td>
+    <td>
+      <a class="show_63254" href="/books/63254">Show</a>
+    </td>
+    <td>
+      <a class="show_63254" href="/books/63254/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63254" href="/books/63254">Destroy</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>データベース実践入門</td>
+    <td>効率的なSQL文を教えてくれます</td>
+  　<td>
+      <a class="show_63255" href="/books/63255">Show</a>
+    </td>
+    <td>
+      <a class="show_63255" href="/books/63255/edit">Edit</a>
+    </td>
+    <td>
+      <a class="show_63255" href="/books/63255">Destroy</a>
+    </td>
+  </tr>
+
+  <h2>New book</h2>
+  <!- form_with部分 ->
+  <%= form_with model: @book do |f| %>
+
+  <label for="book_title">Title</label>
+  <%= f.text_field :title %>
+
+  <label for="book_body">Body</label>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'creat book' %>
+<% end %>
+
